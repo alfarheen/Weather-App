@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <body>
+<main ng-app="WeatherApp" ng-controller="MainCtrl">
+  <div class="container-fluid newconwidth back fill">
+    <div class="row">
+      <header class="col-xs-12 text-center">
+        <h1 class="text-center">Weather App</h1>
+      </header>
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="text-center">
+          <h3>{{city+','+country}}</h3>
+          <span>{{currentTemp}}<sup>o</sup><b ng-click="tempChange()">{{tempType}}</b></span>
+          <p>{{desc}}</p>
+          <i ng-class= "getIcon(desc)" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+    </body>
+ </html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
